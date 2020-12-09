@@ -102,6 +102,28 @@ move=Moveobj(circle_1,circle_2)
 
 
 
+import rhinoscriptsyntax as rs
+
+#クラス定義
+class CirclePack():
+    def __init__(self,_id,_circle_obj): #イニシャライズ関数の引数を何にすれば良いのか？
+        self.id=_id
+        self.circle_obj=_circle_obj
+    def getDistance(self)  #関数の引数も何にすれば良いのか？
+    def getStatus(self)
+    def MoveObj(self)
+
+
+id_1=rs.AddCircle((0,0,0),40)
+
+circle_1=CirclePack(self,id_1,_circle_obj) 
+#インスタンス化(実体化)
+#イニシャライズの関数の引数の数と同じ？
+#ここでプログラム実行される。
+#self(自分の？)
+
+
+
 
 #print(circle_1) →idが出力される。
 #print(circle_2) →idが出力される。
